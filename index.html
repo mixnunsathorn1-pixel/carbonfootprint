@@ -426,7 +426,7 @@ h4{font-size: 23px;}
         /* ===== ใส่โค้ดธีมเขียว-ขาวตรงนี้ ===== */
 
 body {
-    background: linear-gradient(135deg, #c8e6c9 0%, #c8e6c9 100%);
+    background: #f0eeee;
     color: #007a6d;
 }
 
@@ -1771,13 +1771,15 @@ body {
 
             try {
                 // ส่งข้อมูลไปยัง Backend API
-                const response = await fetch('http://localhost:3000/api/assessment', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(surveyData)
-                });
+                const response = await fetch(
+  '/api/assessment',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(surveyData)
+  }
+);
+
 
                 if (!response.ok) throw new Error('ไม่สามารถบันทึกข้อมูล');
 
