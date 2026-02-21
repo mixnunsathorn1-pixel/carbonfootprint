@@ -1771,13 +1771,15 @@ body {
 
             try {
                 // ส่งข้อมูลไปยัง Backend API
-                const response = await fetch('http://localhost:3000/api/assessment', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(surveyData)
-                });
+                const response = await fetch(
+  '/api/assessment',
+  {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(surveyData)
+  }
+);
+
 
                 if (!response.ok) throw new Error('ไม่สามารถบันทึกข้อมูล');
 
