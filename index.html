@@ -1633,7 +1633,7 @@ body {
 
             surveyQuestions.forEach((q, index) => {
                 html += `
-                    <div class="quiz-section" style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 15px; margin-bottom: 20px;">
+                    <div class="quiz-section" style="background: #e8f5f4; padding: 25px; border-radius: 15px; margin-bottom: 20px; border-left: 4px solid #007a6d;">
                         <h4 style="color: #a8d5ba; margin-bottom: 20px; font-size: 1.05em; line-height: 1.6;">${q}</h4>
                         <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
                             ${options.map((opt, i) => `
@@ -1659,8 +1659,8 @@ body {
             });
 
             html += `
-                <div style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 15px; margin: 30px 0;">
-                    <h4 style="color: #a8d5ba; margin-bottom: 15px;">💬 ข้อเสนอแนะเพิ่มเติม (ถ้ามี)</h4>
+                <div style="background: #e8f5f4; padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #007a6d;">
+                    <h4 style="color: #007a6d; margin-bottom: 15px; font-weight: 600;">💬 ข้อเสนอแนะเพิ่มเติม (ถ้ามี)</h4>
                     <textarea id="surveyComment" rows="4" style="
                         width: 100%;
                         padding: 15px;
@@ -1849,8 +1849,8 @@ body {
                     <p style="font-size: 1.3em; margin-top: 10px;">คะแนนเฉลี่ยรวม: <strong>${totalAvg.toFixed(2)}/5.00</strong> (${totalPercentage}%)</p>
                 </div>
                 
-                <h4 style="margin-top: 30px; margin-bottom: 15px;">คะแนนเฉลี่ยแต่ละหัวข้อ:</h4>
-                <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 15px;">
+                <h4 style="margin-top: 30px; margin-bottom: 15px; color: #007a6d;">คะแนนเฉลี่ยแต่ละหัวข้อ:</h4>
+                <div style="background: #e8f5f4; padding: 20px; border-radius: 15px; border-left: 4px solid #007a6d;">
             `;
 
             const questions = [

@@ -596,7 +596,7 @@ h4{font-size: 23px;}
             <div class="content-card">
                 <h2>แนวทางการลดปริมาณ Carbon</h2>
 
-                <div class="diagram-card" style="background: #f5f5f5; padding: 50px 30px; border-radius: 20px;">
+                <div class="diagram-card" style="background: #ffffff; padding: 50px 30px; border-radius: 20px;">
                     <h3 style="color: #333; text-align: center; margin-bottom: 50px; font-size: 1.8em; font-weight: bold;">แนวทางการลดปริมาณ Carbon</h3>
                     
                     <div style="max-width: 1000px; margin: 0 auto; position: relative;">
@@ -1454,8 +1454,8 @@ h4{font-size: 23px;}
 
             surveyQuestions.forEach((q, index) => {
                 html += `
-                    <div class="quiz-section" style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 15px; margin-bottom: 20px;">
-                        <h4 style="color: #a8d5ba; margin-bottom: 20px; font-size: 1.05em; line-height: 1.6;">${q}</h4>
+                    <div class="quiz-section" style="background: #e8f5f4; padding: 25px; border-radius: 15px; margin-bottom: 20px; border-left: 4px solid #007a6d;">
+                        <h4 style="color: #007a6d; margin-bottom: 20px; font-size: 1.05em; line-height: 1.6; font-weight: 600;">${q}</h4>
                         <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
                             ${options.map((opt, i) => `
                                 <label style="flex: 1; min-width: 100px;">
@@ -1480,8 +1480,8 @@ h4{font-size: 23px;}
             });
 
             html += `
-                <div style="background: rgba(0,0,0,0.3); padding: 25px; border-radius: 15px; margin: 30px 0;">
-                    <h4 style="color: #a8d5ba; margin-bottom: 15px;">💬 ข้อเสนอแนะเพิ่มเติม (ถ้ามี)</h4>
+                <div style="background: #e8f5f4; padding: 25px; border-radius: 15px; margin: 30px 0; border-left: 4px solid #007a6d;">
+                    <h4 style="color: #007a6d; margin-bottom: 15px; font-weight: 600;">💬 ข้อเสนอแนะเพิ่มเติม (ถ้ามี)</h4>
                     <textarea id="surveyComment" rows="4" style="
                         width: 100%;
                         padding: 15px;
@@ -1645,7 +1645,7 @@ h4{font-size: 23px;}
                 </div>
                 
                 <h4 style="margin-top: 30px; margin-bottom: 15px;">คะแนนเฉลี่ยแต่ละหัวข้อ:</h4>
-                <div style="background: rgba(0,0,0,0.3); padding: 20px; border-radius: 15px;">
+                <div style="background: #e8f5f4; padding: 20px; border-radius: 15px; border-left: 4px solid #007a6d;">
             `;
 
             const questions = [
